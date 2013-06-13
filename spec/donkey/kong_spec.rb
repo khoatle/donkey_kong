@@ -1,5 +1,4 @@
 require_relative '../spec_helper.rb'
-require_relative '../../lib/donkey/kong'
 
 describe Donkey::Kong do
   spec_list = [
