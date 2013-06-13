@@ -26,4 +26,9 @@ describe Donkey::Kong do
       expect(Donkey::Kong.convert(test_set[0])).to eq(test_set[1])
     end
   end
+
+  it 'non-numbers cause a NotANumber exception' do
+    expect { Donkey::Kong.convert("fifteen") }.to raise_error(NotANumber)
+  end
+
 end

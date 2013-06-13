@@ -1,5 +1,7 @@
 require "donkey/kong/version"
 
+class NotANumber < StandardError; end
+
 module Donkey
   module Kong
     def self.convert(number)
