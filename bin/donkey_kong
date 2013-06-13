@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'donkey/kong'
+
+1.upto(100).each do |num|
+  puts Donkey::Kong.convert(num.to_i)
+end
